@@ -1,0 +1,10 @@
+{
+  "name": {
+    "message": "Take control of your scroll",
+    "description": "Extension name"
+  },
+  "description": {
+    "message": "Sick of websites hijacking your scrolling? More and more sites are abusing overflow:hidden to prevent scrolling in the main window until you do some unwanted action.So I made this Chrome extension to take back control of the scroll",
+    "description": "Extension description"
+  }
+}

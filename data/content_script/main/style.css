@@ -1,0 +1,11 @@
+/* html, body, html::before, body::before {
+  overflow: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  height: auto !important;
+} */
+
+/* lapresse.ca */
+.brz_msg_wall_body{
+  display: none !important;
+}

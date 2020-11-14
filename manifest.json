@@ -1,0 +1,57 @@
+{
+  "name": "__MSG_name__",
+  "short_name": "control-your-scroll",
+  "version": "1.0.0",
+  "minimum_chrome_version": "55",
+  "description": "__MSG_description__",
+  "homepage_url": "https://github.com/alfreddagenais/take-control-of-your-scroll",
+  "manifest_version": 2,
+  "icons": {
+    "16": "data/icons/16.png",
+    "32": "data/icons/32.png",
+    "48": "data/icons/48.png",
+    "64": "data/icons/64.png",
+    "128": "data/icons/128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "<all_urls>",
+    "\u003Call_urls>",
+    "contextMenus"
+  ],
+  "background": {
+    "page": "lib/chrome/background.html"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": {
+      "16": "data/icons/16.png",
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png",
+      "64": "data/icons/64.png"
+    },
+    "default_title": "__MSG_name__"
+  },
+  "content_scripts": [{
+    "all_frames": true,
+    "exclude_globs": [
+      "*/chrome/newtab*"
+    ],
+    "js": [
+      "data/rules/rules.js",
+      "data/content_script/inject.js"
+    ],
+    "match_about_blank": true,
+    "matches": [ "\u003Call_urls>" ],
+    "run_at": "document_start"
+  }],
+  "options_ui": {
+    "chrome_style": true,
+    "open_in_tab": true,
+    "page": "data/options/options.html"
+  },
+  "web_accessible_resources": [
+    "data/content_script/*.css"
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scroll Mode</title>
+    <link rel="stylesheet" type="text/css" href="options.css" />
+  </head>
+  <body>
+    <button id="open-support-page">open-support-page</button>
+    <button id="make-a-donation">make-a-donation</button>
+    <details class="section-1">
+      <summary>Include</summary>
+      <div class="content">
+        <table class="section">
+          <tr>
+            <td>
+              <label class="comment">Comma-separated list of domains to ajust scroll mode page</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea type="text" id="whitelist" placeholder="i.e. google.com, yahoo.com, bing.com, ..."></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </details>
+    <script src="../rules/rules.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
